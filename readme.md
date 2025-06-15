@@ -92,6 +92,7 @@ One chart. One goal. No clutter.
    - Python 3.9+
    - `pip install fastapi uvicorn requests`
 
+
 2. Run the API locally:
    ```bash
    uvicorn api.holdings:app --reload
