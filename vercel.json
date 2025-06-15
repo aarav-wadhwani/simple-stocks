@@ -1,12 +1,15 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "api/*.py", "use": "@vercel/python" },
-    { "src": "frontend/**", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/api/(.*)", "dest": "api/holdings.py" },
-    { "src": "/(.*)", "dest": "frontend/index.html" }
-  ]
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/main.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "api/holdings.py"
+      }
+    ]
 }
