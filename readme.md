@@ -86,3 +86,17 @@ One chart. One goal. No clutter.
 
 🪪 Project Identity:
 “ClearTrack is the meditation app of investing. One place to reflect on how your money’s growing — without the noise.”
+## Local Development
+
+1. Install dependencies:
+   - Python 3.9+
+   - `pip install fastapi uvicorn requests`
+
+2. Run the API locally:
+   ```bash
+   uvicorn api.holdings:app --reload
+   ```
+
+3. Open `frontend/index.html` in your browser to use the app locally.
+
+Deploying to Vercel will automatically build the Python serverless functions in `api/` and serve the static frontend from `frontend/`.
