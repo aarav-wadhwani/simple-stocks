@@ -88,9 +88,11 @@ One chart. One goal. No clutter.
 “ClearTrack is the meditation app of investing. One place to reflect on how your money’s growing — without the noise.”
 ## Local Development
 
+
 1. Install dependencies:
    - Python 3.9+
    - `pip install fastapi uvicorn requests`
+
 
 
 2. Run the API locally:
